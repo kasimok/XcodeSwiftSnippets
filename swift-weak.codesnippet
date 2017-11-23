@@ -12,7 +12,7 @@
 	<string>[weak self] in
             guard let strongSelf = self else { return }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5FFB5B9-1B62-49B5-B1E1-0749BBE07D42</string>
+	<string>95A6EDD0-2D94-4E8E-A494-CD0A2156F5BE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>

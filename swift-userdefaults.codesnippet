@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-weak</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+import Foundation
+
+enum Setting: String {
+    
+    //------------ setting&switches ------------
+    case &lt;#settingName#&gt;
+    //------------Advanced  ------------
+    static func registerDefaults() {
+        UserDefaults.standard.register(defaults: [
+            Setting.&lt;#settingName#&gt;.rawValue: &lt;#deafultValue#&gt;,
+            ])
+    }
+}
+
+extension UserDefaults {
+    //bool setter and getter
+    func bool(for setting: Setting) -> Bool {
+        return bool(forKey: setting.rawValue)
+    }
+    func set(_ bool: Bool, for setting: Setting) {
+        set(bool, forKey: setting.rawValue)
+    }
+    //integer setter and getter
+    func integer(for setting: Setting) -> Int {
+        return integer(forKey: setting.rawValue)
+    }
+    func set(_ integer: Int, for setting: Setting) {
+        set(integer, forKey: setting.rawValue)
+    }
+    //string setter and getter
+    func set(_ str: String, for setting: Setting){
+        set(str, forKey: setting.rawValue)
+    }
+    func string(for setting: Setting) -> String{
+        return string(forKey: setting.rawValue)!
+    }
+    
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>95A6EDD0-2D94-4E8E-A494-CD0A2156F5BE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Swift user defaults</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift user defaults settings</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
