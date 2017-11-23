@@ -1,5 +1,7 @@
 import os
 from xml.dom import minidom
+from shutil import copyfile
+dst = os.path.expanduser('~/Library/Developer/Xcode/UserData/CodeSnippets/')
 
 for root, dirs, files in os.walk("."):
 	for file in files:
@@ -16,3 +18,4 @@ for root, dirs, files in os.walk("."):
 					prefix = key.nextSibling.nextSibling.firstChild.nodeValue
 			# print "[%s] %s" % (prefix, summary)
 			print '{0: <36} {1}'.format(prefix, summary)
+			copyfile(file, dst+file)
