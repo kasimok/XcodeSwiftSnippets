@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-deprecated</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@available(iOS, introduced: &lt;#firstIntroducedVersion#&gt;, deprecated: &lt;#deprecatedVersion#&gt;, message: "&lt;#message#&gt;")
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0A63B12F-DF0D-460F-816D-05CCE674C7DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Deprecated API</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift deprecated API</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

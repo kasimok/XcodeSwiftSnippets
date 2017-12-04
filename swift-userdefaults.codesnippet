@@ -14,7 +14,7 @@ import Foundation
 
 enum Setting: String {
     
-    //------------ setting&switches ------------
+    //------------ setting_switches ------------
     case &lt;#settingName#&gt;
     //------------Advanced  ------------
     static func registerDefaults() {
